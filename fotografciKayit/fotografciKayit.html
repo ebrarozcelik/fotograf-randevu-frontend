@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Fotoğrafçı Kayıt Paneli</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <img src="../images/FotoRandevuLogo.png" alt="Logo" class="logo">
+        <div class="menu">
+            
+            <a href="../AnaGiris/anaGiris.html">Anasayfa</a>
+            <a href="../Hakkimizda/hakkimizda.html">Hakkımızda</a>
+            <a href="../iletisim/iletisim.html">İletişim</a>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+            <h2>Kayıt Sayfası</h2>
+            <form id="kayitFormu">
+                <div class="form-group">
+                    
+                    <label for="kullaniciAdi">Kullanıcı Adı</label>
+                    <input type="text" class="form-control" id="kullaniciAdi" placeholder="Kullanıcı Adı">
+                </div>
+                <div class="form-group">
+                    
+                    <label for="adSoyad">Ad Soyad</label>
+                    <input type="text" class="form-control" id="adSoyad" placeholder="Ad Soyad">
+                </div>
+                <div class="form-group">
+                    
+                    <label for="telefon">Telefon</label>
+                    <input type="text" class="form-control" id="telefon" placeholder="Telefon">
+                </div>
+                <div class="form-group">
+                    
+                    <label for="sifre">Şifre</label>
+                    <input type="password" class="form-control" id="sifre" placeholder="Şifre">
+                </div>
+                <button type="button" class="btn btn-warning btn-lg" onclick="kayitOl()">KAYIT OL</button>
+            </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Gazi Üniversitesi. Tüm hakları saklıdır.</p>
+        <p>
+            <a href="../Hakkimizda/hakkimizda.html" style="text-decoration: none; color: #030303;">Hakkımızda</a> |
+            <a href="../iletisim/iletisim.html" style="text-decoration: none; color: #030303;">İletişim</a> 
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../fotografciKayit/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Randevu Oluştur</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../musteriRandevuAl/scripts.js" defer></script>
+</head>
+<div class="navbar">
+    <img src="/images/FotoRandevuLogo.png" alt="Logo" class="logo">
+    <div class="navbar">
+        <img src="../images/FotoRandevuLogo.png" alt="Logo" class="logo">
+        <div class="menu">
+            
+            <a href="../AnaGiris/anaGiris.html">Anasayfa</a>
+            <a href="../Hakkimizda/hakkimizda.html">Hakkımızda</a>
+            <a href="../iletisim/iletisim.html">İletişim</a>
+        </div>
+    </div>
+</div>
+<body>
+    <div class="container mt-5">
+                <h2>Randevu Oluştur</h2>
+                <form id="girisFormu">
+                    <div class="form-group">
+                        <label for="paket">Paket</label>
+                        <select class="form-control" id="paket">
+                            <option value="1">Paket 1</option>
+                            <option value="2">Paket 2</option>
+                            <option value="3">Paket 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tarih">Tarih</label>
+                        <input type="date" class="form-control" id="tarih" placeholder="Tarihi Girin">
+                    </div>
+                    <div class="form-group">
+                        <label for="mekan">Mekan</label>
+                        <input type="text" class="form-control" id="mekan" placeholder="Mekan Girin">
+                    </div>
+                    <div class="form-group">
+                        <label for="kullaniciAdi">Kullanıcı Adı</label>
+                        <input type="text" class="form-control" id="kullaniciAdi" placeholder="Kullanıcı Adınızı Girin">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="randevuEkle()">Randevu Ekle</button>
+                </form>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="sonucModal" tabindex="-1" role="dialog" aria-labelledby="modalBaslik" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalBaslik">Sonuç</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalMesaji">
+                    <!-- Mesaj buraya gelecek -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Gazi Üniversitesi. Tüm hakları saklıdır.</p>
+        <p>
+            <a href="../Hakkimizda/hakkimizda.html" style="text-decoration: none; color: #030303;">Hakkımızda</a> |
+            <a href="../iletisim/iletisim.html" style="text-decoration: none; color: #030303;">İletişim</a> 
+        </p>
+    </footer>
+</body>
+</html>

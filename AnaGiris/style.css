@@ -1,0 +1,231 @@
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/images/peach-bg.jpg'); /* Arka plan resmi */
+    background-size: cover; /* Resmi kapsayacak şekilde boyutlandırır */
+    background-repeat: no-repeat;/* Resmin tekrarlanmasını engeller */
+    background-position: center center;
+    height: 100vh;
+    background-attachment: fixed;
+    max-width: 1920px;
+
+}
+
+.container {
+    background-color: #fbc59c    ;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Piksel cinsinden genişlik ayarlandı */
+    height: 50%;
+    margin: 200px 0 100px 200px; 
+    padding: 20px;
+    position: absolute; /* Position kullanılarak sol tarafa yaslandı */
+    transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+}
+.container:hover {
+    background-color: #FFAC81; /* Arka plan rengini değiştirir */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Kutu gölgesini değiştirir */
+    transform: scale(1.05); /* Hafif büyüme efekti */
+    border-color: #a0a0a0; /* Kenarlık rengini değiştirir */
+}
+.new-container {
+    background-color: #F2F0C7;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 200px 0 200px 100px;
+    padding: 20px;
+    margin-left: 1100px;
+}
+.bottom-containers {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 800px;
+    padding-bottom: 20px; /* Eğer isterseniz alt kısmında bir boşluk bırakabilirsiniz */
+    width: auto;
+    margin-left: 65px;
+    margin-right: 65px;
+    gap: 50px ;
+}
+
+.bottom-container {
+    background-color: #F2F0C7;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 450px;
+    overflow: auto;
+    padding: 10px;
+    transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.bottom-container:hover {
+    background-color: #FFAC81;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    border-color: #a0a0a0;
+}
+
+.card {
+    background-color: #e6e6fa;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 75%; /* Genişlik %100 olarak ayarlandı */
+    margin: 0 auto;
+}
+
+
+
+h2 {
+    font-family: fantasy;
+    font-size: 45px;
+    color: #030303;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+h3 {
+    font-family: "Reddit Mono", monospace;
+    font-size: 20px;
+    color: #030303;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+p {
+    color: #030303;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-family:  "Reddit Mono", monospace;
+    font-weight: 500;
+}
+
+button {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    width: 160px;
+    font-size: 1rem;
+    font-family:  "Reddit Mono", monospace;
+    font-weight: 800;
+}
+.btn-warning {
+    background-color: #FF796F; /* Sarı bir renk belirledik */
+    border-color: #FF796F; /* Kenarlık rengini de aynı yaptık */
+    color: #fff; /* Metin rengini beyaz yaptık */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #FF775C; /* Hover durumunda daha koyu mavi bir renk belirledik */
+    border-color: #FF775C; /* Kenarlık rengini de biraz daha koyu yaptık */
+    color: #fff; /* Metin rengini beyaz tuttuk */
+}
+.navbar {
+    background-color: #F2F0C7;
+
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #e4e1b4;
+    height: 120px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 120px;
+    width: auto;
+    padding: 5px 5px;
+    margin-left: 200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.menu a {
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+    padding: 5px 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: 20px;
+    margin-right: 200px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family:"Reddit Mono", monospace;
+}
+
+.menu a:hover {
+    background-color: #FF775C;
+    color: #fff;
+    transform: translateY(-2px);
+}
+/* Footer Styles */
+footer {
+    background-color: #F2F0C7;
+    border-top: 5px solid #e4e1b4;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: #030303;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    margin-top: 50px; /* İçerikten biraz boşluk bırakmak için */
+}
+footer p {
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .menu a {
+        margin: 10px 5px;
+    }
+    .logo {
+        max-width: 150px; /* Daha büyük ekranlar için maksimum genişlik */
+    }
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container, .new-container {
+        width: 80%; /* Küçük ekranlarda genişliği artırdık */
+        margin: 10px 0;
+    }
+    .bottom-containers {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom-container {
+        width: 80%; /* Küçük ekranlarda genişliği artırdık */
+        margin: 10px 0;
+    }
+}

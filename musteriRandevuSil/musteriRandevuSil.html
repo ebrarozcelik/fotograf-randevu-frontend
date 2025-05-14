@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Randevu Sil</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <img src="../images/FotoRandevuLogo.png" alt="Logo" class="logo">
+        <div class="menu">
+            
+            <a href="../AnaGiris/anaGiris.html">Anasayfa</a>
+            <a href="../Hakkimizda/hakkimizda.html">Hakkımızda</a>
+            <a href="../iletisim/iletisim.html">İletişim</a>
+        </div>
+    </div>
+    <div class="container mt-5">
+                <h2>Randevu Sil</h2>
+        <div class="row justify-content-center mt-5">
+
+                <h3>Mevcut Randevular</h3>0000
+                <table class="table table-bordered" id="randevuListesi">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Paket</th>
+                            <th>Tarih</th>
+                            <th>Mekan</th>
+                            <th>Kullanıcı Adı</th>
+                            <th>İşlem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Randevu verileri buraya gelecek -->
+                    </tbody>
+                </table>
+            
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="sonucModal" tabindex="-1" role="dialog" aria-labelledby="modalBaslik" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalBaslik">Sonuç</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalMesaji">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Gazi Üniversitesi. Tüm hakları saklıdır.</p>
+        <p>
+            <a href="../Hakkimizda/hakkimizda.html" style="text-decoration: none; color: #030303;">Hakkımızda</a> |
+            <a href="../iletisim/iletisim.html" style="text-decoration: none; color: #030303;">İletişim</a> 
+        </p>
+    </footer>
+</body>
+</html>
